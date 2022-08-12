@@ -152,6 +152,18 @@ def main():
     b2.pack(side='top')
     menu.mainloop()
 
+    ans = messagebox.askretrycancel("Accept the challenge?", "Play again?")
+    root = Tk()
+    root.destroy()
+    return ans
+
+
+    while True:
+        if game() == True:
+            pass
+        else:
+            break
+
 
 if __name__ == '__main__':
     main()
